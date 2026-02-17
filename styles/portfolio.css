@@ -164,3 +164,26 @@ gap: 24px;
   margin-bottom: 24px;
   border:none;
  }
+ /* responsive layout */
+.hide{
+  display: none;
+}
+
+@media screen and (max-width:576px) {
+  .skills-container,
+  .resume-container, 
+  footer,
+  .about-items{
+    flex-direction: column;
+  }
+  
+  
+  footer, .about{
+    padding: 20px;
+  }
+  .footercolumn{
+    width: 100%;
+  }
+   footer input[type="text"], footer input[type="Email"], footer textarea{width: calc(100%-40px);
+
+}}
