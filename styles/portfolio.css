@@ -173,10 +173,25 @@ gap: 24px;
   .skills-container,
   .resume-container, 
   footer,
-  .about-items{
+  .about-items,
+  .banner,
+  nav,
+  nav > ul
+  {
     flex-direction: column;
   }
-  
+  nav > ul{
+    gap: 20px;
+  }
+  .banner{
+    margin:20px ;
+  }
+  .banner-profile-picture{
+    width: 100%;
+  }
+  .header{
+    background-image: none;
+  }
   
   footer, .about{
     padding: 20px;
@@ -184,6 +199,15 @@ gap: 24px;
   .footercolumn{
     width: 100%;
   }
-   footer input[type="text"], footer input[type="Email"], footer textarea{width: calc(100%-40px);
+   footer input[type="text"], f
+   ooter input[type="Email"], 
+   footer textarea{width: calc(100%-40px);
 
 }}
+/* tablet  */
+@media screen and (min-width:576px) and (max-width:990px) {
+  .banner{
+    flex-direction: column;
+  }
+  
+}
